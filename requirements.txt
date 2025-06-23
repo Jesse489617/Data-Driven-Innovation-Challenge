@@ -1,5 +1,5 @@
 streamlit
-bs4
-sentence_transformers
+beautifulsoup4
+sentence-transformers
 torch>=2.1
 transformers

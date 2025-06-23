@@ -1,6 +1,13 @@
+import os
+import subprocess
 import streamlit as st
 from pipeline import process_url, summarization, ask_question
 from retriever import Retriever
+
+try:
+    import sentence_transformers
+except ImportError:
+    subprocess.call(['pip', 'install', '-r', 'requirements.txt'])
 
 # Page setup
 st.set_page_config(page_title="Anime Summarizer Chat", layout="wide")
