@@ -1,0 +1,5 @@
+streamlit
+bs4
+sentence_transformers
+torch>=2.1
+transformers
